@@ -6,8 +6,8 @@
 //  Copyright © 2016年 hrscy. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "YMEssenceViewController.h"
 
-@interface YMNewViewController : UIViewController
+@interface YMNewViewController : YMEssenceViewController
 
 @end
