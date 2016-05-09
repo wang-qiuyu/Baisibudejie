@@ -73,6 +73,11 @@ static NSString *const commentID = @"comment";
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         //页码
         self.page = 1;
+        //说明没有评论数据
+        if (![responseObject isKindOfClass:[NSDictionary class]]) {
+            [self.tableView.mj_header endRefreshing];
+            return ;
+        }
         //最热评论
         self.hotComments = [YMComment mj_objectArrayWithKeyValuesArray:responseObject[@"hot"]];
         
@@ -105,6 +110,12 @@ static NSString *const commentID = @"comment";
     params[@"lastid"] = comment.ID;
     params[@"page"] = @(page);
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        //说明没有评论数据
+        if (![responseObject isKindOfClass:[NSDictionary class]]) {
+            self.tableView.mj_footer.hidden = YES;
+            return ;
+        }
         
         //最新评论
         NSArray *newComments = [YMComment mj_objectArrayWithKeyValuesArray:responseObject[@"data"]];

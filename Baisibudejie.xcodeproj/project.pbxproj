@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25ABD8F61CE0872E000F2327 /* YMMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ABD8F41CE0872E000F2327 /* YMMineCell.m */; };
+		25ABD8FA1CE0912E000F2327 /* YMMineFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ABD8F91CE0912E000F2327 /* YMMineFooterView.m */; };
+		25DD462A1CE09A7D00E11FAC /* YMSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DD46291CE09A7D00E11FAC /* YMSquare.m */; };
 		37D70C12519C3193D03D3BDC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D7B138340E9B3F7D25A624 /* libPods.a */; };
 		942851781CA4B7D8001D738D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 942851771CA4B7D8001D738D /* main.m */; };
 		942851811CA4B7D8001D738D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9428517F1CA4B7D8001D738D /* Main.storyboard */; };
@@ -74,6 +77,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25ABD8F31CE0872E000F2327 /* YMMineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMMineCell.h; sourceTree = "<group>"; };
+		25ABD8F41CE0872E000F2327 /* YMMineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMMineCell.m; sourceTree = "<group>"; };
+		25ABD8F81CE0912E000F2327 /* YMMineFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMMineFooterView.h; sourceTree = "<group>"; };
+		25ABD8F91CE0912E000F2327 /* YMMineFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMMineFooterView.m; sourceTree = "<group>"; };
+		25DD46281CE09A7D00E11FAC /* YMSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMSquare.h; sourceTree = "<group>"; };
+		25DD46291CE09A7D00E11FAC /* YMSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMSquare.m; sourceTree = "<group>"; };
 		4CA0A6C021A423A1DA73DB3A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		53D7B138340E9B3F7D25A624 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		942851731CA4B7D8001D738D /* Baisibudejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baisibudejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +208,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25ABD8EE1CE086D9000F2327 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				25DD46281CE09A7D00E11FAC /* YMSquare.h */,
+				25DD46291CE09A7D00E11FAC /* YMSquare.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25ABD8EF1CE086D9000F2327 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				25ABD8F31CE0872E000F2327 /* YMMineCell.h */,
+				25ABD8F41CE0872E000F2327 /* YMMineCell.m */,
+				25ABD8F81CE0912E000F2327 /* YMMineFooterView.h */,
+				25ABD8F91CE0912E000F2327 /* YMMineFooterView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3687073DAADE01A81BDF1B1A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,8 +505,8 @@
 			isa = PBXGroup;
 			children = (
 				942851F31CA4B8BD001D738D /* Controller */,
-				942851F61CA4B8BD001D738D /* Model */,
-				942851F71CA4B8BD001D738D /* View */,
+				25ABD8EE1CE086D9000F2327 /* Model */,
+				25ABD8EF1CE086D9000F2327 /* View */,
 			);
 			path = "Me(我的)";
 			sourceTree = "<group>";
@@ -489,20 +518,6 @@
 				942851F51CA4B8BD001D738D /* YMMeViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		942851F61CA4B8BD001D738D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		942851F71CA4B8BD001D738D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		942851F81CA4B8BD001D738D /* New(最新) */ = {
@@ -721,10 +736,13 @@
 				942852351CA4B8BD001D738D /* Foundation+Log.m in Sources */,
 				9428523D1CA4B8BD001D738D /* YMMeViewController.m in Sources */,
 				9428523C1CA4B8BD001D738D /* YMTopWindow.m in Sources */,
+				25DD462A1CE09A7D00E11FAC /* YMSquare.m in Sources */,
 				9428523E1CA4B8BD001D738D /* YMNewViewController.m in Sources */,
 				9428522D1CA4B8BD001D738D /* YMRecommandCategory.m in Sources */,
 				942852331CA4B8BD001D738D /* YMTextField.m in Sources */,
 				9428521C1CA4B8BD001D738D /* YMProgressView.m in Sources */,
+				25ABD8F61CE0872E000F2327 /* YMMineCell.m in Sources */,
+				25ABD8FA1CE0912E000F2327 /* YMMineFooterView.m in Sources */,
 				942852151CA4B8BD001D738D /* YMComment.m in Sources */,
 				942852211CA4B8BD001D738D /* YMTopicPictureView.m in Sources */,
 				942852381CA4B8BD001D738D /* UIView+YMExtension.m in Sources */,
@@ -875,6 +893,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = Baisibudejie/Classes/Others/PrefixHeader.pch;
 				INFOPLIST_FILE = Baisibudejie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hrscy.Baisibudejie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -889,6 +908,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = Baisibudejie/Classes/Others/PrefixHeader.pch;
 				INFOPLIST_FILE = Baisibudejie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hrscy.Baisibudejie;
 				PRODUCT_NAME = "$(TARGET_NAME)";

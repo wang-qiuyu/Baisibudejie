@@ -39,7 +39,7 @@
     
     [self setChildController:[[YMFriendTrendsViewController alloc] init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     
-    [self setChildController:[[YMMeViewController alloc] init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    [self setChildController:[[YMMeViewController alloc] initWithStyle:UITableViewStyleGrouped] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
     //设置tabBar
     [self setValue:[[YMTabBar alloc] init] forKey:@"tabBar"];
 }

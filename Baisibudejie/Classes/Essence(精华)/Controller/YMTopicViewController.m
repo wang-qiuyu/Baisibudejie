@@ -15,6 +15,7 @@
 #import "YMTopicCell.h"
 #import "YMCommentViewController.h"
 #import "UIView+YMExtension.h"
+#import "YMNewViewController.h"
 
 @interface YMTopicViewController ()
 
@@ -112,6 +113,11 @@ static NSString *const YMTopicCellID = @"topic";
     }];
 }
 
+#pragma mark - a 参数
+-(NSString *)aParam {
+    return [self.presentationController isKindOfClass:[YMNewViewController class]] ? @"newList" : @"list";
+}
+
 #pragma mark 加载更多数据
 -(void)loadMoreTopics {
     //结束下拉
@@ -120,7 +126,7 @@ static NSString *const YMTopicCellID = @"topic";
     self.page ++;
     //请求参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"a"] = @"list";
+    params[@"a"] = self.aParam;
     params[@"c"] = @"data";
     params[@"type"] = @(self.type);
     params[@"page"] = @(self.page);
