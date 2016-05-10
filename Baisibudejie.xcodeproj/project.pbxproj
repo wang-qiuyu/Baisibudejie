@@ -74,6 +74,7 @@
 		942852451CA4B8BD001D738D /* YMPushGuide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9428520A1CA4B8BD001D738D /* YMPushGuide.xib */; };
 		944CEB411CCC547200EE48CE /* UIImage+YJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 944CEB401CCC547200EE48CE /* UIImage+YJExtension.m */; };
 		94F66DDF1CDD752500242ABC /* UIImageView+YMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F66DDE1CDD752500242ABC /* UIImageView+YMExtension.m */; };
+		94F7B98A1CE15BF300B04612 /* YMSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F7B9891CE15BF300B04612 /* YMSquareButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -193,6 +194,8 @@
 		944CEB401CCC547200EE48CE /* UIImage+YJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YJExtension.m"; sourceTree = "<group>"; };
 		94F66DDD1CDD752500242ABC /* UIImageView+YMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+YMExtension.h"; sourceTree = "<group>"; };
 		94F66DDE1CDD752500242ABC /* UIImageView+YMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+YMExtension.m"; sourceTree = "<group>"; };
+		94F7B9881CE15BF300B04612 /* YMSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMSquareButton.h; sourceTree = "<group>"; };
+		94F7B9891CE15BF300B04612 /* YMSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMSquareButton.m; sourceTree = "<group>"; };
 		D2DB3D298B97C57CAB4FDB5C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -224,6 +227,8 @@
 				25ABD8F41CE0872E000F2327 /* YMMineCell.m */,
 				25ABD8F81CE0912E000F2327 /* YMMineFooterView.h */,
 				25ABD8F91CE0912E000F2327 /* YMMineFooterView.m */,
+				94F7B9881CE15BF300B04612 /* YMSquareButton.h */,
+				94F7B9891CE15BF300B04612 /* YMSquareButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -754,6 +759,7 @@
 				9428521F1CA4B8BD001D738D /* YMTopicCell.m in Sources */,
 				942852191CA4B8BD001D738D /* YMCommentCell.m in Sources */,
 				9428522B1CA4B8BD001D738D /* YMRecommandViewController.m in Sources */,
+				94F7B98A1CE15BF300B04612 /* YMSquareButton.m in Sources */,
 				9428522F1CA4B8BD001D738D /* YMRecommandCategoryCell.m in Sources */,
 				942852251CA4B8BD001D738D /* YMVoiceView.m in Sources */,
 			);

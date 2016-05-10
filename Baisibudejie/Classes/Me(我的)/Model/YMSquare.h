@@ -10,4 +10,13 @@
 
 @interface YMSquare : NSObject
 
+/** 图片*/
+@property (nonatomic, copy) NSString *icon;
+
+/** 名称*/
+@property (nonatomic, copy) NSString *name;
+
+/** 链接*/
+@property (nonatomic, copy) NSString *url;
+
 @end
