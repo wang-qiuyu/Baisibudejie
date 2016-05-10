@@ -77,8 +77,7 @@
 }
 
 -(CGFloat)centerY {
-    return self.center.y
-    ;
+    return self.center.y;
 }
 
 - (BOOL)isShowingOnKeyWindow

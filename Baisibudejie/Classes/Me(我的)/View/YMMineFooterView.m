@@ -12,45 +12,45 @@
 #import "YMSquare.h"
 #import "UIButton+WebCache.h"
 #import "YMSquareButton.h"
+#import "YMWebViewController.h"
 
 @implementation YMMineFooterView
 
 -(instancetype)initWithFrame:(CGRect)frame {
     
     if (self = [super initWithFrame:frame]) {
-        self.height = 100;
-        self.backgroundColor = [UIColor whiteColor];
-        
-        //请求参数
+        self.backgroundColor = [UIColor clearColor];
+        // 参数
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
         params[@"a"] = @"square";
         params[@"c"] = @"topic";
-        // 发送请求给服务器
+        
+        // 发送请求
         [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             NSArray *squares = [YMSquare mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
-            //创建方块
-            [self createSquare:squares];
-        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             
+            // 创建方块
+            [self createSquares:squares];
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         }];
+        
     }
     return self;
 }
 
 #pragma mark 创建方块YMSquareButton
--(void)createSquare:(NSArray *)squares {
+-(void)createSquares:(NSArray *)squares {
     //一行最多 4 列
     int maxCols = 4;
     
     CGFloat buttonW = SCREENW / maxCols;
-    CGFloat buttonH = buttonW + 30;
+    CGFloat buttonH = buttonW;
     
     for (int i = 0; i < squares.count; i++) {
-        YMSquare *square = squares[i];
         
-        YMSquareButton *button = [[YMSquareButton alloc] init];
-        [button setTitle:square.name forState:UIControlStateNormal];
-        [button sd_setImageWithURL:[NSURL URLWithString:square.url] forState:UIControlStateNormal];
+        YMSquareButton *button = [YMSquareButton buttonWithType:UIButtonTypeCustom];
+        button.square = squares[i];
+        [button addTarget:self action:@selector(buttonCLick:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:button];
         
         int col = i % maxCols;
@@ -61,11 +61,23 @@
         button.width = buttonW;
         button.height = buttonH;
     }
-    
+    NSUInteger rows = (squares.count + maxCols - 1) / maxCols;
+    //计算 footer 的长度
+    self.height = rows * buttonH;
+    // 重绘
+    [self setNeedsDisplay];
 }
 
--(void)drawRect:(CGRect)rect {
-    [[UIImage imageNamed:@"mainCellBackground"] drawInRect:rect];
+-(void)buttonCLick:(YMSquareButton *)button {
+    if (![button.square.url  hasPrefix:@"http"]) return;
+    
+    YMWebViewController *webVC = [[YMWebViewController alloc] init];
+    webVC.title = button.square.name;
+    
+    //取出当前导航控制器
+    UITabBarController *tabBarVC = (UITabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    UINavigationController *nav = (UINavigationController *)tabBarVC.selectedViewController;
+    [nav pushViewController:webVC animated:YES];
 }
 
 @end

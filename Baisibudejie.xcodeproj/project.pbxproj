@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		257321D71CE18FFF006AEAC4 /* YMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257321D51CE18FFF006AEAC4 /* YMWebViewController.m */; };
+		257321D81CE18FFF006AEAC4 /* YMWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257321D61CE18FFF006AEAC4 /* YMWebViewController.xib */; };
 		25ABD8F61CE0872E000F2327 /* YMMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ABD8F41CE0872E000F2327 /* YMMineCell.m */; };
 		25ABD8FA1CE0912E000F2327 /* YMMineFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ABD8F91CE0912E000F2327 /* YMMineFooterView.m */; };
 		25DD462A1CE09A7D00E11FAC /* YMSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DD46291CE09A7D00E11FAC /* YMSquare.m */; };
@@ -78,6 +80,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		257321D41CE18FFF006AEAC4 /* YMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMWebViewController.h; sourceTree = "<group>"; };
+		257321D51CE18FFF006AEAC4 /* YMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMWebViewController.m; sourceTree = "<group>"; };
+		257321D61CE18FFF006AEAC4 /* YMWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMWebViewController.xib; sourceTree = "<group>"; };
 		25ABD8F31CE0872E000F2327 /* YMMineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMMineCell.h; sourceTree = "<group>"; };
 		25ABD8F41CE0872E000F2327 /* YMMineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMMineCell.m; sourceTree = "<group>"; };
 		25ABD8F81CE0912E000F2327 /* YMMineFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMMineFooterView.h; sourceTree = "<group>"; };
@@ -521,6 +526,9 @@
 			children = (
 				942851F41CA4B8BD001D738D /* YMMeViewController.h */,
 				942851F51CA4B8BD001D738D /* YMMeViewController.m */,
+				257321D41CE18FFF006AEAC4 /* YMWebViewController.h */,
+				257321D51CE18FFF006AEAC4 /* YMWebViewController.m */,
+				257321D61CE18FFF006AEAC4 /* YMWebViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -642,6 +650,7 @@
 				942852431CA4B8BD001D738D /* YMPublishView.xib in Resources */,
 				942852131CA4B8BD001D738D /* YMShowPictureViewController.xib in Resources */,
 				9428520F1CA4B8BD001D738D /* YMCommentViewController.xib in Resources */,
+				257321D81CE18FFF006AEAC4 /* YMWebViewController.xib in Resources */,
 				942852451CA4B8BD001D738D /* YMPushGuide.xib in Resources */,
 				9428520B1CA4B8BD001D738D /* Assets.xcassets in Resources */,
 				942852261CA4B8BD001D738D /* YMVoiceView.xib in Resources */,
@@ -734,6 +743,7 @@
 				942852441CA4B8BD001D738D /* YMPushGuide.m in Sources */,
 				942852391CA4B8BD001D738D /* YMNavigationController.m in Sources */,
 				942851781CA4B7D8001D738D /* main.m in Sources */,
+				257321D71CE18FFF006AEAC4 /* YMWebViewController.m in Sources */,
 				942852291CA4B8BD001D738D /* YMLoginRegisterController.m in Sources */,
 				942852171CA4B8BD001D738D /* YMTopic.m in Sources */,
 				942852421CA4B8BD001D738D /* YMPublishView.m in Sources */,

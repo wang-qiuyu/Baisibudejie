@@ -21,8 +21,6 @@ static NSString *mineID = @"mine";
     
     [self setupTableView];
     
-    
-    
 }
 
 -(void)setupNav {

@@ -1,5 +1,5 @@
 //
-//  YMSquareButton.h
+//  YMWebViewController.h
 //  Baisibudejie
 //
 //  Created by 杨蒙 on 16/5/10.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-@class YMSquare;
 
-@interface YMSquareButton : UIButton
-/** 方块模型 */
-@property (nonatomic, strong) YMSquare *square;
+@interface YMWebViewController : UIViewController
+/** 链接 */
+@property (nonatomic, copy) NSString *url;
 @end
