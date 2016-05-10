@@ -9,6 +9,7 @@
 #import "YMPublishView.h"
 #import "YMVerticalButton.h"
 #import "POP.h"
+#import "YMPublishViewController.h"
 
 static CGFloat const YMAnimationDelay = 0.1;
 static CGFloat const YMAnimationSpringFactor = 8;
@@ -56,7 +57,7 @@ static UIWindow *window_;
     for (int i = 0; i < 6; i++) {
         YMVerticalButton *button = [[YMVerticalButton alloc] init];
         [self addSubview:button];
-        
+        button.tag = i;
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         
         [button setImage:[UIImage imageNamed:images[i]] forState:UIControlStateNormal];
@@ -102,7 +103,12 @@ static UIWindow *window_;
 
 -(void)buttonClick:(UIButton *)button {
     [self cancelWithCompletionBlock:^{
-        
+        if (button.tag == 2) { //发段子
+            YMPublishViewController *publishVC = [[YMPublishViewController alloc] init];
+            
+        } else {
+            
+        }
     }];
     
 }

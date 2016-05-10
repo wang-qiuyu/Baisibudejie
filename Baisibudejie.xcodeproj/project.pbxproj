@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		257321D71CE18FFF006AEAC4 /* YMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257321D51CE18FFF006AEAC4 /* YMWebViewController.m */; };
 		257321D81CE18FFF006AEAC4 /* YMWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257321D61CE18FFF006AEAC4 /* YMWebViewController.xib */; };
+		257321E01CE1ACFE006AEAC4 /* YMPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 257321DE1CE1ACFE006AEAC4 /* YMPublishView.m */; };
+		257321E11CE1ACFE006AEAC4 /* YMPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257321DF1CE1ACFE006AEAC4 /* YMPublishView.xib */; };
+		257321E51CE1ADAF006AEAC4 /* YMPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257321E31CE1ADAF006AEAC4 /* YMPublishViewController.m */; };
+		257321E61CE1ADAF006AEAC4 /* YMPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257321E41CE1ADAF006AEAC4 /* YMPublishViewController.xib */; };
+		257321E91CE1AE55006AEAC4 /* YMPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257321E81CE1AE55006AEAC4 /* YMPostViewController.m */; };
 		25ABD8F61CE0872E000F2327 /* YMMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ABD8F41CE0872E000F2327 /* YMMineCell.m */; };
 		25ABD8FA1CE0912E000F2327 /* YMMineFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ABD8F91CE0912E000F2327 /* YMMineFooterView.m */; };
 		25DD462A1CE09A7D00E11FAC /* YMSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DD46291CE09A7D00E11FAC /* YMSquare.m */; };
@@ -70,8 +75,6 @@
 		9428523E1CA4B8BD001D738D /* YMNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942851FB1CA4B8BD001D738D /* YMNewViewController.m */; };
 		9428523F1CA4B8BD001D738D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 942852001CA4B8BD001D738D /* AppDelegate.m */; };
 		942852411CA4B8BD001D738D /* YMConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 942852041CA4B8BD001D738D /* YMConst.m */; };
-		942852421CA4B8BD001D738D /* YMPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 942852061CA4B8BD001D738D /* YMPublishView.m */; };
-		942852431CA4B8BD001D738D /* YMPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 942852071CA4B8BD001D738D /* YMPublishView.xib */; };
 		942852441CA4B8BD001D738D /* YMPushGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 942852091CA4B8BD001D738D /* YMPushGuide.m */; };
 		942852451CA4B8BD001D738D /* YMPushGuide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9428520A1CA4B8BD001D738D /* YMPushGuide.xib */; };
 		944CEB411CCC547200EE48CE /* UIImage+YJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 944CEB401CCC547200EE48CE /* UIImage+YJExtension.m */; };
@@ -83,6 +86,14 @@
 		257321D41CE18FFF006AEAC4 /* YMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMWebViewController.h; sourceTree = "<group>"; };
 		257321D51CE18FFF006AEAC4 /* YMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMWebViewController.m; sourceTree = "<group>"; };
 		257321D61CE18FFF006AEAC4 /* YMWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMWebViewController.xib; sourceTree = "<group>"; };
+		257321DD1CE1ACFE006AEAC4 /* YMPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMPublishView.h; sourceTree = "<group>"; };
+		257321DE1CE1ACFE006AEAC4 /* YMPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMPublishView.m; sourceTree = "<group>"; };
+		257321DF1CE1ACFE006AEAC4 /* YMPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMPublishView.xib; sourceTree = "<group>"; };
+		257321E21CE1ADAF006AEAC4 /* YMPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMPublishViewController.h; sourceTree = "<group>"; };
+		257321E31CE1ADAF006AEAC4 /* YMPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMPublishViewController.m; sourceTree = "<group>"; };
+		257321E41CE1ADAF006AEAC4 /* YMPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMPublishViewController.xib; sourceTree = "<group>"; };
+		257321E71CE1AE55006AEAC4 /* YMPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMPostViewController.h; sourceTree = "<group>"; };
+		257321E81CE1AE55006AEAC4 /* YMPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMPostViewController.m; sourceTree = "<group>"; };
 		25ABD8F31CE0872E000F2327 /* YMMineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMMineCell.h; sourceTree = "<group>"; };
 		25ABD8F41CE0872E000F2327 /* YMMineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMMineCell.m; sourceTree = "<group>"; };
 		25ABD8F81CE0912E000F2327 /* YMMineFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMMineFooterView.h; sourceTree = "<group>"; };
@@ -188,9 +199,6 @@
 		942852021CA4B8BD001D738D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		942852031CA4B8BD001D738D /* YMConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMConst.h; sourceTree = "<group>"; };
 		942852041CA4B8BD001D738D /* YMConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMConst.m; sourceTree = "<group>"; };
-		942852051CA4B8BD001D738D /* YMPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMPublishView.h; sourceTree = "<group>"; };
-		942852061CA4B8BD001D738D /* YMPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMPublishView.m; sourceTree = "<group>"; };
-		942852071CA4B8BD001D738D /* YMPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMPublishView.xib; sourceTree = "<group>"; };
 		942852081CA4B8BD001D738D /* YMPushGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMPushGuide.h; sourceTree = "<group>"; };
 		942852091CA4B8BD001D738D /* YMPushGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMPushGuide.m; sourceTree = "<group>"; };
 		9428520A1CA4B8BD001D738D /* YMPushGuide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMPushGuide.xib; sourceTree = "<group>"; };
@@ -216,6 +224,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		257321D91CE1A978006AEAC4 /* Publish(发布) */ = {
+			isa = PBXGroup;
+			children = (
+				257321DA1CE1A978006AEAC4 /* Controller */,
+				257321DB1CE1A978006AEAC4 /* Model */,
+				257321DC1CE1A978006AEAC4 /* View */,
+			);
+			path = "Publish(发布)";
+			sourceTree = "<group>";
+		};
+		257321DA1CE1A978006AEAC4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				257321E21CE1ADAF006AEAC4 /* YMPublishViewController.h */,
+				257321E31CE1ADAF006AEAC4 /* YMPublishViewController.m */,
+				257321E41CE1ADAF006AEAC4 /* YMPublishViewController.xib */,
+				257321E71CE1AE55006AEAC4 /* YMPostViewController.h */,
+				257321E81CE1AE55006AEAC4 /* YMPostViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		257321DB1CE1A978006AEAC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		257321DC1CE1A978006AEAC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				257321DD1CE1ACFE006AEAC4 /* YMPublishView.h */,
+				257321DE1CE1ACFE006AEAC4 /* YMPublishView.m */,
+				257321DF1CE1ACFE006AEAC4 /* YMPublishView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		25ABD8EE1CE086D9000F2327 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +360,7 @@
 				942851DD1CA4B8BD001D738D /* Main(主要) */,
 				942851F21CA4B8BD001D738D /* Me(我的) */,
 				942851F81CA4B8BD001D738D /* New(最新) */,
+				257321D91CE1A978006AEAC4 /* Publish(发布) */,
 				942851FE1CA4B8BD001D738D /* Others */,
 			);
 			path = Classes;
@@ -574,9 +622,6 @@
 				942852021CA4B8BD001D738D /* PrefixHeader.pch */,
 				942852031CA4B8BD001D738D /* YMConst.h */,
 				942852041CA4B8BD001D738D /* YMConst.m */,
-				942852051CA4B8BD001D738D /* YMPublishView.h */,
-				942852061CA4B8BD001D738D /* YMPublishView.m */,
-				942852071CA4B8BD001D738D /* YMPublishView.xib */,
 				942852081CA4B8BD001D738D /* YMPushGuide.h */,
 				942852091CA4B8BD001D738D /* YMPushGuide.m */,
 				9428520A1CA4B8BD001D738D /* YMPushGuide.xib */,
@@ -647,7 +692,6 @@
 			files = (
 				942852301CA4B8BD001D738D /* YMRecommandCategoryCell.xib in Resources */,
 				942851861CA4B7D8001D738D /* LaunchScreen.storyboard in Resources */,
-				942852431CA4B8BD001D738D /* YMPublishView.xib in Resources */,
 				942852131CA4B8BD001D738D /* YMShowPictureViewController.xib in Resources */,
 				9428520F1CA4B8BD001D738D /* YMCommentViewController.xib in Resources */,
 				257321D81CE18FFF006AEAC4 /* YMWebViewController.xib in Resources */,
@@ -657,6 +701,8 @@
 				9428522A1CA4B8BD001D738D /* YMLoginRegisterController.xib in Resources */,
 				9428521A1CA4B8BD001D738D /* YMCommentCell.xib in Resources */,
 				942852321CA4B8BD001D738D /* YMRecommandUserCell.xib in Resources */,
+				257321E11CE1ACFE006AEAC4 /* YMPublishView.xib in Resources */,
+				257321E61CE1ADAF006AEAC4 /* YMPublishViewController.xib in Resources */,
 				9428522C1CA4B8BD001D738D /* YMRecommandViewController.xib in Resources */,
 				942852241CA4B8BD001D738D /* YMVideoView.xib in Resources */,
 				9428520D1CA4B8BD001D738D /* Main.storyboard in Resources */,
@@ -724,6 +770,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257321E51CE1ADAF006AEAC4 /* YMPublishViewController.m in Sources */,
 				9428523F1CA4B8BD001D738D /* AppDelegate.m in Sources */,
 				942852411CA4B8BD001D738D /* YMConst.m in Sources */,
 				942852311CA4B8BD001D738D /* YMRecommandUserCell.m in Sources */,
@@ -746,10 +793,10 @@
 				257321D71CE18FFF006AEAC4 /* YMWebViewController.m in Sources */,
 				942852291CA4B8BD001D738D /* YMLoginRegisterController.m in Sources */,
 				942852171CA4B8BD001D738D /* YMTopic.m in Sources */,
-				942852421CA4B8BD001D738D /* YMPublishView.m in Sources */,
 				94F66DDF1CDD752500242ABC /* UIImageView+YMExtension.m in Sources */,
 				942852351CA4B8BD001D738D /* Foundation+Log.m in Sources */,
 				9428523D1CA4B8BD001D738D /* YMMeViewController.m in Sources */,
+				257321E91CE1AE55006AEAC4 /* YMPostViewController.m in Sources */,
 				9428523C1CA4B8BD001D738D /* YMTopWindow.m in Sources */,
 				25DD462A1CE09A7D00E11FAC /* YMSquare.m in Sources */,
 				9428523E1CA4B8BD001D738D /* YMNewViewController.m in Sources */,
@@ -759,6 +806,7 @@
 				25ABD8F61CE0872E000F2327 /* YMMineCell.m in Sources */,
 				25ABD8FA1CE0912E000F2327 /* YMMineFooterView.m in Sources */,
 				942852151CA4B8BD001D738D /* YMComment.m in Sources */,
+				257321E01CE1ACFE006AEAC4 /* YMPublishView.m in Sources */,
 				942852211CA4B8BD001D738D /* YMTopicPictureView.m in Sources */,
 				942852381CA4B8BD001D738D /* UIView+YMExtension.m in Sources */,
 				9428523A1CA4B8BD001D738D /* YMTabBarController.m in Sources */,
